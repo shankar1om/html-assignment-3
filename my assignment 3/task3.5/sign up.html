@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+
+<body style="background-color: skyblue;">
+    <header>
+        <h1>
+            sign up here.
+        </h1>
+    </header><br><br>
+    <section>
+
+
+        <div
+            style="border: solid gray;border-radius: 5%;display: inline-block;position: absolute;left: 50%;background-color: gray;padding-right: 10%;padding-bottom: 2%;padding-top: 2%; padding-left: 1%;">
+
+
+
+            <form action="#" method="post">
+
+                <h1
+                    style="border:solid burlywood;display: inline-block;position: absolute;left: 58%;background-color: gray;">
+                    Sign up
+                </h1>
+                <label for="name"><b> First name : </b></label><br>
+                <input type="text" name="firstname" id="name" minlength="3" required="required"><br>
+                <label for="lname"><b>Last name:</b></label><br>
+                <input type="text" name="last name" id="lname" minlength="3" required="required"><br><br>
+                <label for="date of birth"><b>D.O.B :</b></label>
+                <input type="date" name="DOB" id="date of birth" required  min="2000-01-01">
+
+                <p>
+                    <b>Gender:</b> <br>
+                    <label for="male"><b>male</b></label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="female"><b>Female</b></label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+
+                </p>
+                <label for="age"><b>Age :</b></label>
+                <input type="number" id="age" name="age" required min="0" max="150"><br>
+                <label for="username"><b>enter user id :</b></label><br>
+                <input type="text" name="username" id="username" required="required" maxlength="12" pattern="^[A-Z]+$"
+                    title="example:ABCDEF..."><br>
+                <label for="password"><b>make a password :</b></label><br>
+                <input type="password" name="password" id="password" pattern="^[a-z]+$" required="required"
+                    title="example:abcdef..."><br>
+                <label for="confirm oassword"><b>Confirm password:</b></label><br>
+                <input type="password" id="Confirm passord" pattern="^[a-z]+$" required="required"><br>
+                <label for="phone"><b>enter phone number:</b></label><br>
+                <input type="number" name="phone" id="phone" min="0000000000" max="9999999999" required="required"><br>
+                <label for="email"><b>enter email id :</b></label><br>
+                <input type="email" name="email" id="email" required="required"><br>
+                <p>
+                    Agree to terms and conditions
+                    <input type="checkbox" value="ok" name="terms and conditions" required>
+
+                </p><br><br>
+                <input type="submit" value="Sign up">
+                <input type="reset"><br>
+
+                <p>
+                    if you already have an account?
+                    <a href="sign in.html"> Sign in</a>
+
+                </p>
+
+            </form>
+        </div>
+    </section>
